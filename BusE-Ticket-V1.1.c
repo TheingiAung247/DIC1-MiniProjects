@@ -222,7 +222,7 @@ void homepage(void) {
                         printf(" ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\n");
                         break;
                     } else {
-                        printf("\tYour password not incorrect.\n\t\tTry Again.\n");
+                        printf("\n\t\tYour password not incorrect.\n\t\t\tTry Again.\n");
                     }
                 }
             } else{

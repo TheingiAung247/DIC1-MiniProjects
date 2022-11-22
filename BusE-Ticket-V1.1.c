@@ -142,6 +142,7 @@ void registration(void) {
 void login(void) {
     printf("\n\t^^^^^^^Welcome to Login Page.^^^^^^^.\n");
     while('true') {
+        login_flag = 0;
         printf("\n\t\tEnter Your Name.\n");
         printf("\t\t(Please, do not use space.)\n\n");
         printf("\n\t\t\t>>>");
@@ -168,7 +169,7 @@ void login(void) {
                 registration();
                 break;
             } else if(option == 2) {
-                login();
+                continue;
             } else {
                 printf("\n\t\tInvalid option\n");
             }
@@ -202,6 +203,7 @@ void homepage(void) {
         } else if(plus_minus == 'e' || plus_minus == 'E'){
             if(dbMoney[moneyIndex] >= 200) {
                 while('true') {
+                    flag = 0;
                     printf("\n\t\t\tEnter Your Password.\n");
                     printf("\n\t\t\t>>>");
                     scanf("%d", &password);
